@@ -154,7 +154,7 @@ function init(questionsArr) {
         const fileName = markDown
         .toLowerCase()
         .split('# ')[1]
-        .split('\n')[0]
+        .split('!')[0]
         + '-README.md';
         writeToFile(fileName, markDown)
     })

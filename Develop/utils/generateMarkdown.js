@@ -1,3 +1,19 @@
+function generateBadge(license) {
+  if (license === 'Apache 2.0') {
+    const badge =  'https://img.shields.io/badge/License-Apache%202.0-brightgreen'
+    return badge;
+  } else if (license === 'GNU GPLv3') {
+    const badge = 'https://img.shields.io/badge/License-GNU%20GPLV3-brightgreen'
+    return badge;
+  } else if (license === 'MIT') {
+    const badge = 'https://img.shields.io/badge/License-MIT-brightgreen'
+    return badge;
+  } else if (license === 'ISC') {
+    const badge = 'https://img.shields.io/badge/License-ISC-brightgreen'
+    return badge;
+  }
+}
+
 // function to generate markdown for README
 function generateMarkdown(data) {
 
@@ -12,7 +28,9 @@ function generateMarkdown(data) {
     ...questions
   } = data;
 
-return `# ${title}
+  generateBadge(license)
+
+return `# ${title} ![${license} Badge](${generateBadge(license)})
 
 ## Description
 
