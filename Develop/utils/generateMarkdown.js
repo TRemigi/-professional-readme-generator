@@ -1,16 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  const test = {
-    title: 'nothingApp',
-    description: 'it works',
-    installation: 'do it',
-    usage: 'use it',
-    license: 'Apache 2.0',
-    contributing: 'dont',
-    testing: 'npm test',
-    github: 'tremigi',
-    email: 'tayremigi@gmail.com'
-  }
+
   const {
     title,
     description,
@@ -20,17 +10,16 @@ function generateMarkdown(data) {
     contributing,
     testing,
     ...questions
-  } = test;
+  } = data;
 
-  return `# ${title}
+return `# ${title}
 
 ## Description
 
 ${description}
 
-## Table of Contents
 
-If your README is very long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -67,9 +56,9 @@ ${testing}
 
 ## Questions
 
-GitHub Profile: ${questions.github}
+GitHub Profile: [${questions.github}](https://github.com/${questions.github})
 
-Reach me via email at ${questions.email}
+Reach me via email at [${questions.email}](${questions.email})
 
 `;
 };
