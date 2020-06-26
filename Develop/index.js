@@ -88,7 +88,7 @@ const questions = [
     {
         type: 'input',
         name: 'testing',
-        message: 'Provide project testing instructions',
+        message: 'Provide project testing instructions:',
         validate: testInput => {
             if (testInput) {
                 return true;
