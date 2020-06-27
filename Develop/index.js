@@ -142,9 +142,9 @@ function writeToFile(fileName, markDown) {
 function init(questionsArr) {
     // const answerData = [];
     console.log(`
-    =================
-    Create New README
-    =================
+  =================
+  Create New README
+  =================
     `);
     return inquirer.prompt(questionsArr)
     .then(answers => {
@@ -155,7 +155,7 @@ function init(questionsArr) {
         .toLowerCase()
         .split('# ')[1]
         .split('!')[0]
-        .replace(/\s+/g, '');
+        .replace(/\s+/g, '')
         + '-README.md';
         writeToFile(fileName, markDown)
     })
