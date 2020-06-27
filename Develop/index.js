@@ -155,6 +155,7 @@ function init(questionsArr) {
         .toLowerCase()
         .split('# ')[1]
         .split('!')[0]
+        .replace(/\s+/g, '');
         + '-README.md';
         writeToFile(fileName, markDown)
     })
