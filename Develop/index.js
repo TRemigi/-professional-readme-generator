@@ -127,7 +127,7 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, markDown) {
+const writeToFile = (fileName, markDown) => {
     
     fs.writeFile('../' + fileName, markDown, function(err) {
         if (err) {
@@ -139,7 +139,7 @@ function writeToFile(fileName, markDown) {
 };
 
 // function to initialize program
-function init(questionsArr) {
+const init = (questionsArr) => {
     // const answerData = [];
     console.log(`
     =================
