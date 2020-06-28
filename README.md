@@ -29,7 +29,7 @@ The PRG is a command-line application built to assist in the creation of high-qu
 2. Answer all question prompts.
 3. View your professional README at "professional-readme-generator 'yourprojecttitle-README.md'".
 
-See a video demo by clicking [here](https://drive.google.com/file/d/1M259ouoXmZX4GNYc8BX3DiYq-zxTDI8u/view?usp=sharing)
+Click [here](https://drive.google.com/file/d/1M259ouoXmZX4GNYc8BX3DiYq-zxTDI8u/view?usp=sharing) for a video demo
 
 
 ## License
