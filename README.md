@@ -17,24 +17,20 @@ The PRG is a command-line application built to assist in the creation of high-qu
 
 ## Installation
 
-1. Download .zip file, then extract in preferred location.
-2. Open terminal and navigate to "professional-readme-generator\Develp".
-3. Type "npm install" and press enter. Wait a moment while dependencies are installed.
-4. Done!
+1. Download the .zip file, then extract in preferred location. 2. Open terminal and navigate to "professional-readme-generator\Develop". 3. Type "npm install" and press enter. Wait a moment while dependencies are installed. 4. Done!
 
 
 ## Usage 
 
-1. From "professional-readme-generator\Develop", type "node index" to initiate program.
-2. Answer all question prompts.
-3. View your professional README at "professional-readme-generator 'yourprojecttitle-README.md'".
+1. From "professional-readme-generator\Develop", type "node index" and press enter to initiate the program. 2. Answer all question prompts. 3. View your new README in the root directory of the program chosen upon installation.
 
-Click [here](https://drive.google.com/file/d/1M259ouoXmZX4GNYc8BX3DiYq-zxTDI8u/view?usp=sharing) for a video demo
+    Click [here](https://drive.google.com/file/d/1M259ouoXmZX4GNYc8BX3DiYq-zxTDI8u/view?usp=sharing) for a video demo
 
 
 ## License
 
 This project is covered under the following license(s):
+
 MIT
 
 
@@ -52,5 +48,5 @@ Use "npm test"
 
 GitHub Profile: [TRemigi](https://github.com/TRemigi)
 
-Reach me via email at [tayremigi@gmail.com](tayremigi@gmail.com)
+Reach me via email at <tayremigi@gmail.com>
 
