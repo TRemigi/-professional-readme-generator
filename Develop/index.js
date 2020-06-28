@@ -5,8 +5,7 @@ const inquirer = require('inquirer');
 // add fs
 const fs = require('fs');
 // array of questions for user
-const questions = [
-    {
+const questions = [{
         type: 'input',
         name: 'title',
         message: 'What is the name of your project?',
@@ -127,15 +126,14 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, markDown) {
-    
-    fs.writeFile('../' + fileName, markDown, function(err) {
+function writeToFile (fileName, markDown) {
+
+    fs.writeFile('../' + fileName, markDown, function (err) {
         if (err) {
-          return console.log(err);
+            return console.log(err);
         }
-  
-        console.log('README created!');
-      });
+        return console.log('README created!');
+    });
 };
 
 // function to initialize program
@@ -147,18 +145,18 @@ function init(questionsArr) {
   =================
     `);
     return inquirer.prompt(questionsArr)
-    .then(answers => {
-        return generateMarkdown(answers)
-    })
-    .then(markDown => {
-        const fileName = markDown
-        .toLowerCase()
-        .split('# ')[1]
-        .split('!')[0]
-        .replace(/\s+/g, '')
-        + '-README.md';
-        writeToFile(fileName, markDown)
-    })
+        .then(answers => {
+            return generateMarkdown(answers)
+        })
+        .then(markDown => {
+            const fileName = markDown
+                .toLowerCase()
+                .split('# ')[1]
+                .split('!')[0]
+                .replace(/\s+/g, '') +
+                '-README.md';
+            writeToFile(fileName, markDown)
+        })
 };
 
 // function call to initialize program
