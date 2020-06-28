@@ -17,12 +17,19 @@ The PRG is a command-line application built to assist in the creation of high-qu
 
 ## Installation
 
-1. Download .zip file, then extract in preferred location. 2. Open terminal and navigate to "professional-readme-generator\Develp". 3. Type "npm install" and press enter. Wait a moment while dependencies are installed. 4. Done!
+1. Download .zip file, then extract in preferred location.
+2. Open terminal and navigate to "professional-readme-generator\Develp".
+3. Type "npm install" and press enter. Wait a moment while dependencies are installed.
+4. Done!
 
 
 ## Usage 
 
-1. From "professional-readme-generator\Develop", type "node index" to initiate program. 2. Answer all question prompts. 3. View your professional README at "professional-readme-generator 'yourprojecttitle-README.md'".
+1. From "professional-readme-generator\Develop", type "node index" to initiate program.
+2. Answer all question prompts.
+3. View your professional README at "professional-readme-generator 'yourprojecttitle-README.md'".
+
+See a video demo by clicking [here](https://drive.google.com/file/d/1M259ouoXmZX4GNYc8BX3DiYq-zxTDI8u/view?usp=sharing)
 
 
 ## License
