@@ -140,12 +140,18 @@ const questions = [{
 // function to write README file
 function writeToFile (fileName, markDown) {
 
-    fs.writeFile('../' + fileName, markDown, function (err) {
+    fs.mkdir('../' + fileName, { recursive: true }, function (err) {
         if (err) {
             return console.log(err);
         }
-        return console.log('README created!');
     });
+    fs.writeFile('../' + fileName + '/README.md', markDown, function (err) {
+        if (err) {
+            return console.log(err);
+        }
+    });
+
+    return console.log('README created!');
 };
 
 // function to initialize program
@@ -165,10 +171,11 @@ function init(questionsArr) {
                 .toLowerCase()
                 .split('# ')[1]
                 .split('!')[0]
-                .replace(/\s+/g, '') +
-                '-README.md';
+                .replace(/\s+/g, '');
             writeToFile(fileName, markDown)
-        })
+        }).catch(err => {
+            console.log(err);
+        });
 };
 
 // function call to initialize program
