@@ -60,6 +60,7 @@ ${usage}
 ## License
 
 This project is covered under the following license(s):
+
 ${license}
 
 
