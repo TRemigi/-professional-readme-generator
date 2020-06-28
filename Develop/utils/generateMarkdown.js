@@ -77,7 +77,7 @@ ${testing}
 
 GitHub Profile: [${questions.github}](https://github.com/${questions.github})
 
-Reach me via email at [${questions.email}](${questions.email})
+Reach me via email at <${questions.email}>
 
 `;
 };
