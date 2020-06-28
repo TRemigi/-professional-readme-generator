@@ -58,6 +58,18 @@ const questions = [{
         }
     },
     {
+        type: 'confirm',
+        name: 'confirmVideo',
+        message: 'Would you like to add a video demo link in the usage section?',
+        default: false
+    },
+    {
+        type: 'input',
+        name: 'video',
+        message: 'Enter the video URL:',
+        when: ({ confirmVideo }) => confirmVideo
+    },
+    {
         type: 'list',
         name: 'license',
         message: 'Choose a license:',

@@ -14,6 +14,15 @@ function generateBadge(license) {
   }
 }
 
+function addVideo(data) {
+  if (data.video) {
+    return `
+    Click [here](${data.video}) for a video demo`;
+  } else if (!data.video) {
+    return ``;
+  }
+};
+
 // function to generate markdown for README
 function generateMarkdown(data) {
 
@@ -22,6 +31,7 @@ function generateMarkdown(data) {
     description,
     installation,
     usage,
+    video,
     license,
     contributing,
     testing,
@@ -55,6 +65,7 @@ ${installation}
 ## Usage 
 
 ${usage}
+${addVideo(data)}
 
 
 ## License
