@@ -140,20 +140,19 @@ const questions = [{
 // function to write README file
 function writeToFile (fileName, markDown) {
 
-    fs.mkdir('../Output' + fileName, { recursive: true }, function (err) {
+    fs.mkdir('../Output/' + fileName, { recursive: true }, function (err) {
         if (err) {
             return console.log(err);
         }
-    }).then(fileName, markDown => {
+    });
     fs.writeFile('../Output/' + fileName + '/README.md', markDown, function (err) {
         if (err) {
             return console.log(err);
         }
-    })
-    
+    });
 
     return console.log('README created!');
-});
+};
 
 // function to initialize program
 function init(questionsArr) {
