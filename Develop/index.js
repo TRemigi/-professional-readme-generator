@@ -151,7 +151,7 @@ function writeToFile (fileName, markDown) {
         }
     });
 
-    return console.log('README created! Enter "cd ../Output" then open the project name folder to view');
+    return console.log('README created! View it in the Output folder.');
 };
 
 // function to initialize program
