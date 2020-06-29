@@ -29,7 +29,7 @@ The PRG is a command-line application built to assist in the creation of high-qu
 2. Answer all question prompts.
 3. View your new README within the Output folder in the root directory of the program.
 
-Click [here](https://drive.google.com/file/d/1VljB6VwAYzXfuTry9t5TMNx4VgA1CQaL/view?usp=sharing) for a video demo
+Click [here](https://drive.google.com/file/d/1VljB6VwAYzXfuTry9t5TMNx4VgA1CQaL/view) for a video demo
 
 
 ## License
